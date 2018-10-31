@@ -18,4 +18,4 @@
 
 import config
 
-conf = config()
+conf = Config()
