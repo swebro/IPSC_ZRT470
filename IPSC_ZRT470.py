@@ -17,5 +17,19 @@
 #
 
 import config
+import ZRT470
 
 conf = Config()
+
+if conf.rxFreq == conf.txFreq:
+    rx = ZRT470(conf,'s')
+    tx = rx
+    rx.init()
+else:
+    rx = ZRT470(conf,'rx')
+    tx = ZRT470(conf,'tx')
+    rx.init()
+    tx.init()
+    
+    
+sd
