@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-class Conf:
+class Config:
     """Configuration for IPSC_ZRT470"""
     # Connection configuration
     master = ' '            # IP/domain of master server
